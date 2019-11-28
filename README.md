@@ -1,68 +1,31 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# NASA API - Asteroid NeoWS
 
-## Available Scripts
+## Affichage de données d'une API de la NASA avec ReactJS
 
-In the project directory, you can run:
+Vous allez réaliser une application ReactJS affichant des informations sur les astéroïdes passés près de la Terre, en vous appuyant sur les données de l'API de la Nasa.
 
-### `yarn start`
+>Portail des API de la Nasa : [https://api.nasa.gov/index.html](https://api.nasa.gov/index.html)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Objectif
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Avec l'API NeoWs de la Nasa, vous pouvez récupérer des objets sur une période donnée, pour le jour-même, selon un ID récupéré depuis un objet, etc...
 
-### `yarn test`
+Nous allons partir sur un filtre de date (date de début, date de fin) qui permettra de définir une période.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Vous récupérerez donc la liste des astéroïdes passés près de la Terre sur cette période.
 
-### `yarn build`
+Pour chaque élément de la liste, vous êtes libres d'afficher les informations que vous voulez, mais il en faut au minimum 4 ou 5.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Chaque élément aura un lien vers une "fiche individuelle", permettant d'afficher les informations d'un astéroïde.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Sur une fiche individuelle, on aura la possibilité de retourner à la page d'accueil.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+>Il ne sera pas nécessaire, au retour sur la page d'accueil, d'avoir gardé les informations de filtre (période sélectionnée, etc...). Si vous le souhaitez, au lieu de faire une page individuelle à part (avec du routing), vous pouvez faire une *SPA (Single Page Application)*, donc utiliser une seule page dans laquelle vous affichez la liste, et la fiche quand vous sélectionnez un astéroïde
 
-### `yarn eject`
+## Composants
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Vous pouvez utiliser des composants sous forme de classe, de fonction ou les deux à la fois.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Design
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Vous êtes libres sur la libraire / le framework CSS que vous utiliserez. Le seul pré-requis est que l'application soit complètement responsive.
