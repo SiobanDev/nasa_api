@@ -4,42 +4,48 @@
   left: 0;
 }
 
-html, body, #root, .App {
+html, body{
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+}
+
+#root {
   height: 100%;
 }
 
 .App {
   text-align: center;
-  min-height: 100vh;
   background: url("https://source.unsplash.com/1200x800/?milkyway") no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: 100%;
   color: white;
 }
 
-.App-logo {
+.app-logo {
   height: 40vmin;
 }
 
 .App-header {
   width: 100%;
-  height: 40%;
-  display: flex;
+  padding: 3% 0;  display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .main-content {
-  height: 60%;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
+  flex: 1;
+}
+
+.my_form {
+  padding: 5% 0;
 }
 
 form {
@@ -64,6 +70,13 @@ form input.form-control {
 
 .asteroids-data {
   display: flex;
-  min-height: 200px;
-  align-items: center;
+  height: auto;
+  align-items: flex-start;
+  width: 80%;
+  justify-content: center;
+  padding-bottom: 5%;
+}
+
+.asteroids-data table {
+  background: rgba(0,0,0,0.5);
 }

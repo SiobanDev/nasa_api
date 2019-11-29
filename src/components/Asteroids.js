@@ -7,10 +7,16 @@ const Asteroids = ({loading, asteroidsOnDisplay, data}) => {
         if (!loading) {
             return (
                 <div className="asteroids-data">
-                    <table>
-                        <tbody>
-                        <AsteroidsData data={data}/>
-                        </tbody>
+                    <table className="table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Name</th>
+                            <th>Max Diameter</th>
+                            <th>Hazardous</th>
+                        </tr>
+                        </thead>
+                        <AsteroidsData asteroidsCollection={data}/>
                     </table>
                 </div>
             )

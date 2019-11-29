@@ -4,7 +4,7 @@ import "react-datepicker/dist/react-datepicker.css";
 
 const MyForm = ({startDate, endDate, startDateChangeHandler, endDateChangeHandler, onClickHandler}) => {
     return (
-        <div>
+        <div className="my_form">
             <div className="form-group startDateRow">
                 <label htmlFor="startDateInput">Date de début</label>
                 <DatePicker
